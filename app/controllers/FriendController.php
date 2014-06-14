@@ -70,6 +70,7 @@ class FriendController extends ControllerBase {
 			if($friend = $this->session->get('friend')){
 				$remark = new Remark();
 				$remark->remark = $this->request->getPost('remark');
+				$remark->remark = emoji_unified_to_html($remark->remark);
 				$remark->friend_id = $friend->id;
 
 				if($remark->save()){

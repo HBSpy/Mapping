@@ -7,6 +7,7 @@
 		<title>H酱の征友系统</title>
 
 		{{ stylesheet_link('css/bootstrap.min.css') }}
+		{{ stylesheet_link('css/emoji.css') }}
 		{{ javascript_include('js/jquery-1.11.0.min.js') }}
 		{{ javascript_include('js/bootstrap.min.js') }}
 
@@ -51,6 +52,11 @@
 		<div class="container">
 			{{ flash.output() }}
 			{{ content() }}
+		</div>
+
+		<div class="footer">
+			<hr />
+			<p class="text-muted text-center">2014 &copy; BYR-Team :: HBSpy</p>
 		</div>
 	</body>
 </html>

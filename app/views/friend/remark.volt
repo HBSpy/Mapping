@@ -22,7 +22,7 @@
 		</h3>
 	</div>
 	<div class="panel-body">
-		{{ remark.remark|e|nl2br }}
+		{{ remark.remark|nl2br }}
 	</div>
 	<div class="panel-footer">{{ remark.time }}</div>
 </div>
